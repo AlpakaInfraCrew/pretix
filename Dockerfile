@@ -17,5 +17,5 @@ RUN pip3 install pretix-sumup-payment
 ENV DJANGO_SETTINGS_MODULE=
 RUN pip3 install pretix-mandatory-product
 ENV DJANGO_SETTINGS_MODULE=production_settings
-RUN cd /pretix/src && sudo -u pretixuser make production
+RUN cd /pretix/src && make production
 USER pretixuser
