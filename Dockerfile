@@ -18,6 +18,3 @@ ENV DJANGO_SETTINGS_MODULE=
 RUN pip3 install pretix-mandatory-product
 ENV DJANGO_SETTINGS_MODULE=production_settings
 RUN cd /pretix/src && make production
-USER root
-RUN apt update
-RUN apt install -y vim
