@@ -1,5 +1,5 @@
 FROM pretix/standalone:stable
-USER pretixuser
+USER root
 RUN python3 -m pip install --upgrade pip
 RUN pip3 install --upgrade wheel
 RUN pip3 install --upgrade setuptools
@@ -17,4 +17,5 @@ RUN pip3 install pretix-sumup-payment
 ENV DJANGO_SETTINGS_MODULE=
 RUN pip3 install pretix-mandatory-product
 ENV DJANGO_SETTINGS_MODULE=production_settings
+USER pretixuser
 RUN cd /pretix/src && make production
