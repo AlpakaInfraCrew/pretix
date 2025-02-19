@@ -6,7 +6,6 @@ RUN pip3 install --upgrade setuptools
 RUN pip3 install pretix-passbook
 RUN pip3 install pretix-newsletter-ml
 RUN pip3 install pretix-servicefees
-RUN pip3 install pretix-bitpay
 RUN pip3 install pretix-sofort
 RUN pip3 install pretix-sepadebit
 RUN pip3 install pretix-pages
