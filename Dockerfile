@@ -13,6 +13,9 @@ RUN pip3 install pretix-fontpack-free
 RUN pip3 install pretix-cashpayment
 RUN pip3 install pretix-zugferd
 RUN pip3 install pretix-sumup-payment
+RUN apt update
+RUN apt install -y gs
+RUN apt clean
 ENV DJANGO_SETTINGS_MODULE=production_settings
 
 USER pretixuser
