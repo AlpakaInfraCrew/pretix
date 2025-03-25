@@ -13,6 +13,7 @@ RUN pip3 install pretix-fontpack-free
 RUN pip3 install pretix-cashpayment
 RUN pip3 install pretix-zugferd
 RUN pip3 install pretix-sumup-payment
+RUN pip3 install ghostscript
 ENV DJANGO_SETTINGS_MODULE=production_settings
 
 USER pretixuser
