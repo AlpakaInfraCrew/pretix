@@ -17,6 +17,7 @@ RUN pip3 install pretix-cashpayment
 RUN pip3 install pretix-zugferd
 RUN pip3 install pretix-sumup-payment
 RUN pip3 install ghostscript
+RUN pip3 install git+https://gitlab.fachschaften.org/kif/pretix-oidc.git
 ENV DJANGO_SETTINGS_MODULE=production_settings
 
 USER pretixuser
