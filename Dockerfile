@@ -3,7 +3,7 @@ USER root
 RUN apt update
 RUN apt install ghostscript -y
 RUN apt clean
-RUN python3 -m pip install --upgrade pip
+RUN pip3 install --upgrade pip
 RUN pip3 install --upgrade wheel
 RUN pip3 install --upgrade setuptools
 RUN pip3 install pretix-passbook
@@ -17,7 +17,7 @@ RUN pip3 install pretix-cashpayment
 RUN pip3 install pretix-zugferd
 RUN pip3 install pretix-sumup-payment
 RUN pip3 install ghostscript
-RUN pip3 install git+https://github.com/thegcat/pretix-oidc.git
+RUN export PYTHONPATH=$PYTHONPATH:/pretix/src && pip3 install git+https://github.com/thegcat/pretix-oidc.git
 ENV DJANGO_SETTINGS_MODULE=production_settings
 
 USER pretixuser
