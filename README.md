@@ -2,6 +2,29 @@
 
 Pretix Image für Jugend hackt
 
+## Änderungen
+
+### Plugins
+
+- `pretix-passbook`
+- `pretix-newsletter-ml`
+- `pretix-servicefees`
+- `pretix-sofort`
+- `pretix-sepadebit`
+- `pretix-pages`
+- `pretix-fontpack-free`
+- `pretix-cashpayment`
+- `pretix-zugferd`
+- `pretix-sumup-payment`
+- `pretix-oidc`
+
+### Weiteres
+
+- `ghostscript` Debian Paket für ZugFerd Plugin
+- `ghostscript` PIP Paket für ZugFerd Plugin
+
+
+
 
 
 ## Compose File
