@@ -26,7 +26,7 @@ services:
     environment:
       PRETALX_FILESYSTEM_MEDIA: /public/media
       PRETALX_FILESYSTEM_STATIC: /public/static
-    image: ghcr.io/AlpakaInfraCrew/pretix:main
+    image: ghcr.io/alpakainfracrew/pretix:main
     ports:
     - 127.0.0.1:8080:80
     restart: always
