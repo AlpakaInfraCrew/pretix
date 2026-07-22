@@ -18,6 +18,8 @@ RUN pip3 install pretix-zugferd
 RUN pip3 install pretix-sumup-payment
 RUN pip3 install ghostscript
 RUN pip3 install pretix-oidc
+RUN pip3 install git+https://github.com/AlpakaInfraCrew/pretix-jh.git@f03347649552dfa70615dc691a1e8269723a9df2
+
 ENV DJANGO_SETTINGS_MODULE=production_settings
 
 USER pretixuser
