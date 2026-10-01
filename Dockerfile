@@ -19,7 +19,7 @@ RUN pip3 install pretix-sumup-payment
 RUN pip3 install ghostscript
 RUN pip3 install pretix-oidc
 RUN pip3 install -e 'pretix-jh @ git+https://github.com/AlpakaInfraCrew/pretix-jh.git@ec658066349d66cb461b2c87f485ea33b8e483b3'
-RUN pip3 install -e 'pretix-gate-api @ git+https://github.com/thies23/pretix-gate-api@54e73c8cfa826de20acc37f78bbe23c01ae40792'
+RUN pip3 install -e 'pretix-gate-api @ git+https://github.com/thies23/pretix-gate-api@b016fc8647734a7c56655aedcc41d8a1e1ebbb62'
 
 ENV DJANGO_SETTINGS_MODULE=production_settings
 
